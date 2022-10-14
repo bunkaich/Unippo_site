@@ -28,31 +28,31 @@ export default function Nav() {
       )}
       <button className={styles.btn} onClick={toggleNav}>
         <span className={styles.bar}></span>
-        <span className="sr-only">MENU</span>
+        <span className='sr-only'>MENU</span>
       </button>
       <ul className={styles.list}>
         <li>
-          <Link href="/about">
+          <Link href='/about'>
             <a onClick={closeNav}>私たちについて</a>
           </Link>
         </li>
         <li>
-          <Link href="/news">
+          <Link href='/blog'>
             <a onClick={closeNav}>お知らせ</a>
           </Link>
         </li>
         <li>
-          <Link href="/activity">
+          <Link href='/activity'>
             <a onClick={closeNav}>活動内容</a>
           </Link>
         </li>
         <li>
-          <Link href="/">
+          <Link href='/'>
             <a onClick={closeNav}>支援について</a>
           </Link>
         </li>
         <li>
-          <Link href="/">
+          <Link href='/blog/column'>
             <a onClick={closeNav}>コラム</a>
           </Link>
         </li>

@@ -1,9 +1,8 @@
 .flagImg {
   position: relative;
-  width: 100%;
-  height: 130px;
+  aspect-ratio: 3/2;
   /*clip-path: url(#clipshape);*/
-  mask-image: url("/flag_mask.svg");
+  mask-image: url('/flag_mask.svg');
   mask-repeat: no-repeat;
   mask-position: auto;
   mask-size: contain;
@@ -11,8 +10,7 @@
 
 .boxImg {
   position: relative;
-  width: 100%;
-  height: 150px;
+  aspect-ratio: 3/2;
   clip-path: polygon(20% 0, 80% 0, 100% 30%, 100% 100%, 0 100%, 0 30%);
 }
 
@@ -21,14 +19,10 @@
     display: flex;
   }
   .box .flagImg {
-    width: calc(var(--space-lg)*3);
-    height: var(--space-lg);
     margin-right: 0.5em;
     flex: 1.2;
   }
   .box .boxImg {
-    width: calc(var(--space-lg)*3);
-    height: var(--space-lg);
     clip-path: polygon(20% 0, 80% 0, 100% 30%, 100% 100%, 0 100%, 0 30%);
     margin-right: 1em;
     flex: 2;
@@ -46,7 +40,7 @@
   background-color: var(--green);
 }
 
-.circleImg img{
+.circleImg img {
   clip-path: circle(67px at 50% 50%);
 }
 

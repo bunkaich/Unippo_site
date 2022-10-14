@@ -1,3 +1,4 @@
+import { getAllPosts } from 'lib/api'
 import Hero from 'components/hero'
 import Container from 'components/container'
 import Section from 'components/section'
@@ -12,8 +13,11 @@ import Grid from 'components/grid'
 import Box from 'components/box'
 import Card from 'components/card'
 import Link from 'next/link'
+import { eyecatchLocal } from 'lib/constants'
+import { getPlaiceholder } from 'plaiceholder'
+import Posts from 'components/posts'
 
-export default function Home() {
+export default function Home({ posts }) {
   return (
     <Container>
       <div className={[styles.fullWidth, styles.topEyecatch].join(' ')}>
@@ -41,25 +45,10 @@ export default function Home() {
       </Section>
       <Section fullWidth>
         <IconHedding color='blue'>お知らせ</IconHedding>
-        <Grid rows='grid4' gap='var(--space-xs)'>
-          <Link href='/blog/accessory'>
-            <a>
-              <Box flagOn img='/card_10.JPG'>
-                レジンでアクセサリーづくり【平日日中の居場所】
-              </Box>
-            </a>
-          </Link>
-          <Box flagOn img='/card_09.JPG'>
-            【イベント開催】7/14(木)開催！教室開放「すきなことをシェアしよう」
-          </Box>
-          <Box flagOn img='/card_08.JPG'>
-            【イベント開催】7/14(木)開催！教室開放「すきなことをシェアしよう」
-          </Box>
-          <Box flagOn img='/card_07.JPG'>
-            【イベント開催】7/14(木)開催！教室開放「すきなことをシェアしよう」
-          </Box>
-        </Grid>
-        <Button rightOn>お知らせ一覧</Button>
+        <Box flagOn posts={posts} />
+        <Button rightOn link='/blog/'>
+          お知らせ一覧
+        </Button>
       </Section>
       <Section>
         <IconHedding color='yellow'>活動の内容</IconHedding>
@@ -84,18 +73,7 @@ export default function Home() {
         <SectionBody>
           Unippoという名前には「子どもたちにユニークな一歩を踏み出してほしい」という願いが込められています。一人ひとりがもっている「やってみたい」という小さな心の火を、焦らず大切に育てていきたいと思います。
         </SectionBody>
-        <Grid rows='grid3' gap='var(--space-xs)'>
-          <Box img='/card_06.JPG'>
-            【イベント開催】7/14(木)開催！教室開放「すきなことをシェアしよう」
-          </Box>
-          <Box img='/card_05.JPG'>
-            【イベント開催】7/14(木)開催！教室開放「すきなことをシェアしよう」
-          </Box>
-          <Box img='/card_04.JPG'>
-            【イベント開催】7/14(木)開催！教室開放「すきなことをシェアしよう」
-          </Box>
-        </Grid>
-        <Button bars rightOn>
+        <Button bars rightOn link='/blog/column'>
           コラム一覧
         </Button>
       </Section>
@@ -129,6 +107,7 @@ export default function Home() {
           </Card>
         </Grid>
       </Section>
+      {/*
       <Section>
         <IconHedding color='yellow'>私たちも応援しています</IconHedding>
         <Grid rows='grid4'>
@@ -149,6 +128,25 @@ export default function Home() {
           <Button rightOn>応援メッセージを見る</Button>
         </div>
       </Section>
+      */}
     </Container>
   )
+}
+
+export async function getStaticProps() {
+  const posts = await getAllPosts(4)
+
+  for (const post of posts) {
+    if (!post.hasOwnProperty('eyecatch')) {
+      post.eyecatch = eyecatchLocal
+    }
+    const { base64 } = await getPlaiceholder(post.eyecatch.url)
+    post.eyecatch.blurDataURL = base64
+  }
+
+  return {
+    props: {
+      posts: posts,
+    },
+  }
 }
