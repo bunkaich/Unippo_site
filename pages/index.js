@@ -73,6 +73,7 @@ export default function Home({ posts }) {
         <SectionBody>
           Unippoという名前には「子どもたちにユニークな一歩を踏み出してほしい」という願いが込められています。一人ひとりがもっている「やってみたい」という小さな心の火を、焦らず大切に育てていきたいと思います。
         </SectionBody>
+        <Box posts={posts} rows='grid3' />
         <Button bars rightOn link='/blog/column'>
           コラム一覧
         </Button>

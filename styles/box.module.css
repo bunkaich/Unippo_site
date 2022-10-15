@@ -11,7 +11,11 @@
 .boxImg {
   position: relative;
   aspect-ratio: 3/2;
-  clip-path: polygon(20% 0, 80% 0, 100% 30%, 100% 100%, 0 100%, 0 30%);
+  /*clip-path: polygon(20% 0, 80% 0, 100% 30%, 100% 100%, 0 100%, 0 30%);*/
+  mask-image: url('/home_mask.svg');
+  mask-repeat: no-repeat;
+  mask-position: auto;
+  mask-size: contain;
 }
 
 @media (max-width: 767px) {

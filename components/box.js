@@ -5,13 +5,13 @@ import Grid from 'components/grid'
 
 export default function Box({
   posts,
-  img = '/card_01.JPG',
   circleOn = false,
   flagOn = false,
   centerOn = false,
+  rows = 'grid4',
 }) {
   return (
-    <Grid rows='grid4' gap='var(--space-xs)'>
+    <Grid rows={rows} gap='var(--space-xs)'>
       {posts?.map(({ title, slug, eyecatch }) => (
         <article className={styles.eachPost} key={slug}>
           <Link href={`/blog/${slug}`}>
