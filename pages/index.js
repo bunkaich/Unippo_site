@@ -1,4 +1,4 @@
-import { getAllPosts } from 'lib/api'
+import { getAllCategories, getAllPostsByCategory } from 'lib/api'
 import Hero from 'components/hero'
 import Container from 'components/container'
 import Section from 'components/section'
@@ -17,7 +17,7 @@ import { eyecatchLocal } from 'lib/constants'
 import { getPlaiceholder } from 'plaiceholder'
 import Posts from 'components/posts'
 
-export default function Home({ posts }) {
+export default function Home({ news, column }) {
   return (
     <Container>
       <div className={[styles.fullWidth, styles.topEyecatch].join(' ')}>
@@ -45,7 +45,7 @@ export default function Home({ posts }) {
       </Section>
       <Section fullWidth>
         <IconHedding color='blue'>お知らせ</IconHedding>
-        <Box flagOn posts={posts} />
+        <Box flagOn posts={news} />
         <Button rightOn link='/blog/'>
           お知らせ一覧
         </Button>
@@ -73,7 +73,7 @@ export default function Home({ posts }) {
         <SectionBody>
           Unippoという名前には「子どもたちにユニークな一歩を踏み出してほしい」という願いが込められています。一人ひとりがもっている「やってみたい」という小さな心の火を、焦らず大切に育てていきたいと思います。
         </SectionBody>
-        <Box posts={posts} rows='grid3' />
+        <Box posts={column} rows='grid3' />
         <Button bars rightOn link='/blog/column'>
           コラム一覧
         </Button>
@@ -135,6 +135,37 @@ export default function Home({ posts }) {
 }
 
 export async function getStaticProps() {
+  const catSlug = 'news'
+  const allCats = await getAllCategories()
+  const cat = allCats.find(({ slug }) => slug === catSlug)
+  const posts = await getAllPostsByCategory(cat.id, 4)
+
+  const catColumn = allCats.find(({ slug }) => slug === 'column')
+  const column = await getAllPostsByCategory(catColumn.id, 3)
+
+  for (const post of posts) {
+    if (!post.hasOwnProperty('eyecatch')) {
+      post.eyecatch = eyecatchLocal
+    }
+    const { base64 } = await getPlaiceholder(post.eyecatch.url)
+    post.eyecatch.blurDataURL = base64
+  }
+
+  for (const post of column) {
+    if (!post.hasOwnProperty('eyecatch')) {
+      post.eyecatch = eyecatchLocal
+    }
+    const { base64 } = await getPlaiceholder(post.eyecatch.url)
+    post.eyecatch.blurDataURL = base64
+  }
+
+  return {
+    props: {
+      news: posts,
+      column: column,
+    },
+  }
+  /*
   const posts = await getAllPosts(4)
 
   for (const post of posts) {
@@ -150,4 +181,5 @@ export async function getStaticProps() {
       posts: posts,
     },
   }
+  */
 }

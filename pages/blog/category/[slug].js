@@ -7,11 +7,11 @@ import { getPlaiceholder } from 'plaiceholder'
 // ローカルの代替アイキャッチ画像
 import { eyecatchLocal } from 'lib/constants'
 
-export default function Category({ name, posts }) {
+export default function Category({ name, column }) {
   return (
     <Container>
       <PostHeader title={name} subtitle='Blog Category' />
-      <Posts posts={posts} />
+      <Posts posts={column} />
     </Container>
   )
 }
@@ -30,7 +30,7 @@ export async function getStaticProps(context) {
   const allCats = await getAllCategories()
   const cat = allCats.find(({ slug }) => slug === catSlug)
 
-  const posts = await getAllPostsByCategory(cat.id)
+  const posts = await getAllPostsByCategory(cat.id, 2)
 
   for (const post of posts) {
     if (!post.hasOwnProperty('eyecatch')) {
@@ -43,7 +43,7 @@ export async function getStaticProps(context) {
   return {
     props: {
       name: cat.name,
-      posts: posts,
+      column: posts,
     },
   }
 }
