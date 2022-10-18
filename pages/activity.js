@@ -1,3 +1,4 @@
+import Meta from 'components/meta'
 import Container from 'components/container'
 import Hero from 'components/hero'
 import PostBody from 'components/post-body'
@@ -17,6 +18,10 @@ import Column from 'components/column'
 export default function Activity() {
   return (
     <Container>
+      <Meta
+        pageTitle='活動内容'
+        pageDesc='Unippoでの活動内容を紹介するページ'
+      />
       <div className={[styles.fullWidth, styles.topEyecatch].join(' ')}>
         <figure>
           <Image

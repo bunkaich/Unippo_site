@@ -1,5 +1,5 @@
 import { getAllCategories, getAllPostsByCategory } from 'lib/api'
-import Hero from 'components/hero'
+import Meta from 'components/meta'
 import Container from 'components/container'
 import Section from 'components/section'
 import PostBody from 'components/post-body'
@@ -20,6 +20,7 @@ import Posts from 'components/posts'
 export default function Home({ news, column }) {
   return (
     <Container>
+      <Meta />
       <div className={[styles.fullWidth, styles.topEyecatch].join(' ')}>
         <figure className={styles.fullWidth}>
           <Image

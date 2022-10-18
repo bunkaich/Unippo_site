@@ -1,4 +1,5 @@
 import { getAllPosts } from 'lib/api'
+import Meta from 'components/meta'
 import Container from 'components/container'
 import PostHeader from 'components/post-header'
 import Image from 'next/image'
@@ -11,6 +12,7 @@ import Posts from 'components/posts'
 export default function Column({ posts }) {
   return (
     <Container>
+      <Meta pageTitle='' pageDesc='コラム記事の一覧ページ' />
       <Posts posts={posts} />
     </Container>
   )
