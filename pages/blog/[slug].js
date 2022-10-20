@@ -1,5 +1,7 @@
 import { getPostBySlug, getAllSlugs } from 'lib/api'
 import { getPlaiceholder } from 'plaiceholder'
+import { extractText } from 'lib/extract-text'
+import Meta from 'components/meta'
 import Container from 'components/container'
 import PostHeader from 'components/post-header'
 import Image from 'next/image'
@@ -13,9 +15,17 @@ export default function Post({
   content,
   eyecatch,
   categories,
+  description,
 }) {
   return (
     <Container>
+      <Meta
+        pageTitle={title}
+        pageDesc={description}
+        pageImg={eyecatch.url}
+        pageImgW={eyecatch.width}
+        pageImgH={eyecatch.height}
+      />
       <article style={{ marginBottom: 'var(--space-xl)' }}>
         <PostHeader title={title} subtitle='Blog Article' publish={publish} />
         <figure>
@@ -52,6 +62,7 @@ export async function getStaticProps(context) {
   const slug = context.params.slug
 
   const post = await getPostBySlug(slug)
+  const description = extractText(post.content)
   const eyecatch = post.eyecatch ?? eyecatchLocal
   const { base64 } = await getPlaiceholder(eyecatch.url)
   eyecatch.blurDataURL = base64
@@ -62,6 +73,7 @@ export async function getStaticProps(context) {
       content: post.content,
       eyecatch: eyecatch,
       categories: post.categories,
+      description: description,
     },
   }
 }

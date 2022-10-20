@@ -12,7 +12,7 @@ import Posts from 'components/posts'
 export default function Column({ posts }) {
   return (
     <Container>
-      <Meta pageTitle='' pageDesc='コラム記事の一覧ページ' />
+      <Meta pageTitle='コラム一覧' pageDesc='コラム記事の一覧ページ' />
       <Posts posts={posts} />
     </Container>
   )

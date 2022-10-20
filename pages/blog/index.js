@@ -12,7 +12,7 @@ import Posts from 'components/posts'
 export default function Blog({ posts }) {
   return (
     <Container>
-      <Meta pageTitle='' pageDesc='ニュース記事の一覧ページ' />
+      <Meta pageTitle='お知らせ一覧' pageDesc='ニュース記事の一覧ページ' />
       <Posts posts={posts} />
     </Container>
   )
