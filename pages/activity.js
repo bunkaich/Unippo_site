@@ -134,7 +134,10 @@ export default function Activity() {
             <div>
               フリースクール概要
               <br />
-              ・日時：月二回(各月の日程詳細は下記リンク記載)
+              ・日時：月二回
+              <span style={{ fontSize: 'calc(var(--body)*0.7)' }}>
+                (各月の日程詳細は下記リンク記載)
+              </span>
               <br />
               ・内容：午前中プログラム/午後自由時間
               <br />
@@ -142,10 +145,18 @@ export default function Activity() {
               <br />
               ・持ち物：昼食
               <br />
-              ・場所：3rdschool吉祥寺校(東京都武蔵野市吉祥寺
+              ・場所：3rdschool吉祥寺校
               <br />
-              　　　　本町2-17-2マリオンワンビルB1)
-              <br />
+              <p
+                style={{
+                  fontSize: 'calc(var(--body)*0.7)',
+                  paddingLeft: 'var(--space-md)',
+                }}
+              >
+                東京都武蔵野市吉祥寺本町2-17-2
+                <br />
+                マリオンワンビルB1
+              </p>
             </div>
           </Describe>
         </Grid>

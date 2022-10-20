@@ -1,8 +1,8 @@
 .imgBox {
   position: relative;
-  overflow: hidden
+  overflow: hidden;
 }
-@media (max-width: 767px){
+@media (max-width: 767px) {
   .imgBox {
     composes: imgBox;
     width: 100%;
@@ -22,8 +22,9 @@
 .rightRadius {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
+  text-align: left;
 }
-@media (max-width: 767px){
+@media (max-width: 767px) {
   .imgBox {
     composes: imgBox;
     width: 100%;
