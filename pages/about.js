@@ -20,6 +20,9 @@ export default function About() {
       <Meta
         pageTitle='私たちについて'
         pageDesc='Unippoについての詳細情報のページ'
+        pageImg={eyecatch.src}
+        pageImgW={eyecatch.width}
+        pageImgH={eyecatch.height}
       />
       <div className={[styles.fullWidth, styles.topEyecatch].join(' ')}>
         <figure>

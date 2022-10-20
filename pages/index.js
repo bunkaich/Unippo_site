@@ -20,7 +20,11 @@ import Posts from 'components/posts'
 export default function Home({ news, column }) {
   return (
     <Container>
-      <Meta />
+      <Meta
+        pageImg={eyecatch.src}
+        pageImgW={eyecatch.width}
+        pageImgH={eyecatch.height}
+      />
       <div className={[styles.fullWidth, styles.topEyecatch].join(' ')}>
         <figure className={styles.fullWidth}>
           <Image

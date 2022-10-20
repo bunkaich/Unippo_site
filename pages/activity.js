@@ -21,6 +21,9 @@ export default function Activity() {
       <Meta
         pageTitle='活動内容'
         pageDesc='Unippoでの活動内容を紹介するページ'
+        pageImg={eyecatch.src}
+        pageImgW={eyecatch.width}
+        pageImgH={eyecatch.height}
       />
       <div className={[styles.fullWidth, styles.topEyecatch].join(' ')}>
         <figure>
