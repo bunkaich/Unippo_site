@@ -1,5 +1,4 @@
 .wrapper {
-
 }
 
 .flexContainer {
@@ -15,13 +14,12 @@
 .flexItem {
   width: 160px;
   text-align: left;
-
 }
 .flexItem ul {
-  padding-top: calc(var(--space-xs)*0.5);
+  padding-top: calc(var(--space-xs) * 0.5);
 }
 .flexItem li {
-  padding-bottom: calc(var(--space-xs)*0.5);
+  padding-bottom: calc(var(--space-xs) * 0.5);
 }
 .flexItem li::before {
   content: '-';
@@ -43,18 +41,30 @@
     margin: var(--space-xs) 0;
   }
   .dashed {
-    background-image : linear-gradient(to right, var(--gray-80), var(--gray-80) 4px, transparent 4px, transparent 10px);  /* 幅2の線を作る */
-    background-size: 10px 2px;          /* グラデーションの幅・高さを指定 */
-    background-repeat: repeat-x;       /* 横向きにのみ繰り返す */
+    background-image: linear-gradient(
+      to right,
+      var(--gray-80),
+      var(--gray-80) 4px,
+      transparent 4px,
+      transparent 10px
+    ); /* 幅2の線を作る */
+    background-size: 10px 2px; /* グラデーションの幅・高さを指定 */
+    background-repeat: repeat-x; /* 横向きにのみ繰り返す */
     background-position: left top;
   }
 }
 
 .bottomDashed {
-  background-image : linear-gradient(to right, var(--red), var(--red) 4px, transparent 4px, transparent 10px);  /* 幅2の線を作る */
-  background-size: 10px 2px;          /* グラデーションの幅・高さを指定 */
-  background-position: left bottom;  /* 背景の開始位置を指定 */
-  background-repeat: repeat-x;       /* 横向きにのみ繰り返す */
+  background-image: linear-gradient(
+    to right,
+    var(--red),
+    var(--red) 4px,
+    transparent 4px,
+    transparent 10px
+  ); /* 幅2の線を作る */
+  background-size: 10px 2px; /* グラデーションの幅・高さを指定 */
+  background-position: left bottom; /* 背景の開始位置を指定 */
+  background-repeat: repeat-x; /* 横向きにのみ繰り返す */
   background-position: left bottom;
   padding: 0.5rem 0;
 }
@@ -71,6 +81,8 @@
 }
 
 .btn {
+  border: none;
+  font-size: var(--body);
   display: inline-block;
   width: 200px;
   text-align: center;

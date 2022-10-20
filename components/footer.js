@@ -14,6 +14,12 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 
 export default function Footer() {
+  const returnTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    })
+  }
   return (
     <footer className={styles.wrapper}>
       <Container>
@@ -22,12 +28,10 @@ export default function Footer() {
           style={{ backgroundColor: 'var(--accent-yellow)' }}
         >
           <div className={styles.footerContainer}>
-            <Link href=''>
-              <a className={styles.btn}>
-                <FontAwesomeIcon icon={faChevronUp} />
-                <span style={{ marginLeft: '1rem' }}>ページトップ</span>
-              </a>
-            </Link>
+            <button className={styles.btn} onClick={returnTop}>
+              <FontAwesomeIcon icon={faChevronUp} />
+              <span style={{ marginLeft: '1rem' }}>ページトップ</span>
+            </button>
           </div>
         </div>
         <div className={styles.spaceBetween}>
