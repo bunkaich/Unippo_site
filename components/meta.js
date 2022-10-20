@@ -5,7 +5,7 @@ import { siteMeta } from 'lib/constants'
 const { siteTitle, siteDesc, siteUrl, siteLocale, siteType, siteIcon } =
   siteMeta
 
-import siteImg from 'images/ogp.png'
+import siteImg from 'public/eyecatch.png'
 
 export default function Meta({
   pageTitle,
