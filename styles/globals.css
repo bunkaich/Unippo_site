@@ -1,15 +1,15 @@
 :root {
-  --red: #ECAA8F;
-  --green: #8ECF15;
-  --light-green: #BFE96F;
-  --yellow: #FAEF75;
-  --orange: #FF9700;
-  --gray-10: #D9D9D9;
+  --red: #ecaa8f;
+  --green: #8ecf15;
+  --light-green: #bfe96f;
+  --yellow: #faef75;
+  --orange: #ff9700;
+  --gray-10: #d9d9d9;
   --gray-50: #707070;
   --gray-80: #333333;
-  --accent-blue: #48E0FF;
-  --accent-yellow: #FFE202;
-  --white: #FFFFFF;
+  --accent-blue: #48e0ff;
+  --accent-yellow: #ffe202;
+  --white: #ffffff;
   --black: #222222;
 
   /* タイポグラフィ（フォントサイズ） */
@@ -35,7 +35,8 @@ body {
   color: var(--black);
   /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
     sans-serif; */
-  font-family: "Helvetica neue", Arial, "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  font-family: 'Helvetica neue', Arial, 'Hiragino Sans',
+    'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
   font-size: var(--body);
 }
 
@@ -69,7 +70,14 @@ ul {
   padding: 0;
   list-style: none;
 }
-
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+}
 *,
 *::before,
 *::after {
