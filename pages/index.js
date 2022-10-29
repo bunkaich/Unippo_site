@@ -61,7 +61,7 @@ export default function Home({ news, column }) {
           Unippoという名前には「子どもたちにユニークな一歩を踏み出してほしい」という願いが込められています。一人ひとりがもっている「やってみたい」という小さな心の火を、焦らず大切に育てていきたいと思います。
         </SectionBody>
         <Grid rows='grid2'>
-          <Card title='学校外フリースクール' innerOn>
+          <Card title='学校内フリースクール' innerOn>
             学校施設を利用し安全で
             <br />
             豊かな放課後をつくる

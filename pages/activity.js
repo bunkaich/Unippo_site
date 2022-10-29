@@ -91,7 +91,7 @@ export default function Activity() {
       </Section>
       <Section fullWidth>
         <IconHedding color='blue' borderOff>
-          学校外フリースクール
+          学校内フリースクール
         </IconHedding>
         <Column>
           <Grid rows='grid3'>
@@ -161,7 +161,7 @@ export default function Activity() {
           </Describe>
         </Grid>
         <div style={{ paddingBottom: 'var(--space-sm)' }}></div>
-        <Button link='https://peatix.com/event/3367821/view' rightOn altColor>
+        <Button link='https://peatix.com/event/3402316/view' rightOn altColor>
           フリースクールに参加する
         </Button>
       </Section>
