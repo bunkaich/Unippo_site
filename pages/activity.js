@@ -161,7 +161,7 @@ export default function Activity() {
           </Describe>
         </Grid>
         <div style={{ paddingBottom: 'var(--space-sm)' }}></div>
-        <Button link='https://peatix.com/event/3402316/view' rightOn altColor>
+        <Button link='https://peatix.com/event/3419008/view' rightOn altColor>
           フリースクールに参加する
         </Button>
       </Section>
