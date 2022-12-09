@@ -152,7 +152,7 @@ export default function About() {
           学べる社会に
         </SectionBody>
         <Grid rows='grid2'>
-          <Describe imgOn img='/card_05a.JPG' radiusOn></Describe>
+          <Describe imgOn img='/card_05a.jpg' radiusOn></Describe>
           <Describe radiusOn>
             <div>
               子どもだけではなく、大人になってからも、自分の個性や才能に合う学びの機会が、いつもあたりまえのように存在している。
