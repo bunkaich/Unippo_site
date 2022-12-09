@@ -89,7 +89,12 @@ export default function Footer() {
             <br />
             マリオンワンビルB1
           </div>
-          <Button square>お問い合せ</Button>
+          <Button
+            square
+            link='https://docs.google.com/forms/d/e/1FAIpQLSca-azW_RcVPO2Oq4Kw2YAZWe7glQNw7_6zds_NEvn3TwwXnQ/viewform'
+          >
+            お問い合せ
+          </Button>
         </div>
       </Container>
     </footer>
