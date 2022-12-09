@@ -13,6 +13,11 @@
   background-color: var(--white);
   padding: var(--space-xs);
 }
+.textBox h3 {
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
 
 .leftRadius {
   border-top-left-radius: 20px;

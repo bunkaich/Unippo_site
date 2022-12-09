@@ -6,7 +6,7 @@ import PostBody from 'components/post-body'
 import SectionBody from 'components/section-body'
 import IconHedding from 'components/icon-hedding'
 import Image from 'next/image'
-import eyecatch from 'images/pagetop_01.jpg'
+import eyecatch from 'images/pagetop_01a.jpg'
 import styles from 'styles/index.module.css'
 import Button from 'components/button'
 import Grid from 'components/grid'
@@ -49,7 +49,7 @@ export default function Home({ news, column }) {
         </Button>
       </Section>
       <Section fullWidth>
-        <IconHedding color='blue'>お知らせ</IconHedding>
+        <IconHedding color='blue'>Pick up</IconHedding>
         <Box flagOn posts={news} />
         <Button rightOn link='/blog/'>
           お知らせ一覧
@@ -58,29 +58,34 @@ export default function Home({ news, column }) {
       <Section>
         <IconHedding color='yellow'>活動の内容</IconHedding>
         <SectionBody>
-          Unippoという名前には「子どもたちにユニークな一歩を踏み出してほしい」という願いが込められています。一人ひとりがもっている「やってみたい」という小さな心の火を、焦らず大切に育てていきたいと思います。
+          Unippoでは学校の外のフリースクールの運営の他に、学校の中の使用していない教室を利用しての校内フリースクールの運営も行っています。まだ数は多くありませんが、今後様々な地域での活動を検討しています。
         </SectionBody>
         <Grid rows='grid2'>
-          <Card title='学校内フリースクール' innerOn>
+          <Card title='学校内フリースクール' img='/card_01a.jpg' innerOn>
             学校施設を利用し安全で
             <br />
             豊かな放課後をつくる
           </Card>
-          <Card title='学校外フリースクール' img='/card_02.JPG' innerOn>
-            学校施設を利用し安全で
+          <Card
+            title='学校外フリースクール'
+            img='/card_02a.jpg'
+            innerOn
+            greenOn
+          >
+            地域と連携して子どもたちの
             <br />
-            豊かな放課後をつくる
+            学びの機会をつくる
           </Card>
         </Grid>
       </Section>
       <Section fullWidth>
-        <IconHedding color='blue'>教育コラム</IconHedding>
+        <IconHedding color='blue'>活動記録</IconHedding>
         <SectionBody>
           Unippoという名前には「子どもたちにユニークな一歩を踏み出してほしい」という願いが込められています。一人ひとりがもっている「やってみたい」という小さな心の火を、焦らず大切に育てていきたいと思います。
         </SectionBody>
         <Box posts={column} rows='grid3' />
         <Button bars rightOn link='/blog/column'>
-          コラム一覧
+          記事一覧
         </Button>
       </Section>
       <Section fullWidth color='bgImg'>

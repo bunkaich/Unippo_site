@@ -8,6 +8,7 @@ export default function Card({
   img = '/card_01.JPG',
   innerOn = false,
   basicStyle = false,
+  greenOn = false,
 }) {
   return (
     <div
@@ -18,7 +19,13 @@ export default function Card({
       {innerOn ? '' : <h3 className={styles.title}>{title}</h3>}
       <figure className={innerOn ? styles.altCardImg : styles.cardImg}>
         {innerOn || basicStyle ? (
-          <Image src={img} alt='' layout='fill' objectFit='cover' />
+          <Image
+            src={img}
+            alt=''
+            layout='fill'
+            objectFit='cover'
+            className={greenOn ? styles.greenLine : styles.blueLine}
+          />
         ) : (
           <Image
             src={img}

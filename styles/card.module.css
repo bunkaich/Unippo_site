@@ -13,7 +13,7 @@
   border-radius: 7px;
   text-align: center;
 }
-@media (max-width: 767px){
+@media (max-width: 767px) {
   .card {
     margin: calc(var(--space-xs) * 0.5) auto;
   }
@@ -26,14 +26,18 @@
   padding: 0;
 }
 
-.altCard img {
+.blueLine {
+  border-bottom: solid 4px var(--accent-blue) !important;
+}
+
+.greenLine {
   border-bottom: solid 4px var(--green) !important;
 }
 
 .card .cardImg {
   position: relative;
   width: 100%;
-  height: 180px;
+  /*height: 180px;*/
 }
 
 .basic .cardImg {
@@ -44,14 +48,19 @@
 
 .altCardImg {
   composes: cardImg;
-  clip-path: polygon(50% 0%, 100% 40%, 100% 100%, 0 100%, 0 40%);
+  /*clip-path: polygon(50% 0%, 100% 40%, 100% 100%, 0 100%, 0 40%);*/
+  aspect-ratio: 2/1;
+  mask-image: url('/roof_mask.svg');
+  mask-repeat: no-repeat;
+  mask-position: auto;
+  mask-size: contain;
 }
 
 .cardInner {
   padding-top: calc(var(--space-xs));
 }
 .basic .cardInner {
-  padding-top: calc(var(--space-xs)*0.5);
+  padding-top: calc(var(--space-xs) * 0.5);
 }
 .gray {
   background-color: var(--gray-10);
@@ -64,7 +73,7 @@
 }
 
 .basic .title {
-  font-size: calc(var(--heading3)*0.9);
+  font-size: calc(var(--heading3) * 0.9);
   font-weight: 400;
   margin-bottom: calc(var(--space-xs) * 0.4);
 }

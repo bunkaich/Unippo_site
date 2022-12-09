@@ -63,7 +63,7 @@ export default function About() {
             </Grid>
           </div>
           <div style={{ fontSize: 'calc(var(--body))' }}>
-            私たちは学校に行きたくない子どもたちに、居心地の良い学びの場を提供する活動をしています。たとえ学校の学びのスタイルが合わなくても、誰もが自分らしく学び、成長していくことができるように。
+            たとえ学校の学びのスタイルが合わなくても、誰もが自分らしく学び、成長していくことができるよう、私たちは、学校に行きたくない子どもたちを対象に、学校の内外に居心地の良い学びの場を提供する活動をしています。
             <br />
             <br />
             Unippoという名前には「子どもたちにユニークな一歩を踏み出してほしい」という願いが込められています。
@@ -83,13 +83,12 @@ export default function About() {
           <Describe imgOn img='/card_03.JPG' radiusOn></Describe>
           <Describe radiusOn>
             <div>
-              本当は学校に行きたい
-              <br />
+              <h3>本当は学校に行きたい</h3>
               様々な事情により、学校に行きたくてもいけない子どもたちがたくさんいます。
               <br />
-              しかし、学校の教室以外の学びの選択肢が不足している現状があります。
+              学びと成長の機会が損なわれてしまうことは、子どもたちの将来に大きな影響を及ぼすことになります。
               <br />
-              学校に行けないことで、学びと成長の機会が損なわれてしまうことは、子どもたちの将来に大きな影響を及ぼすことになります。
+              しかし、不登校の児童の数に対して、学校以外の学びの場の数が不足している現状があります。
               <br />
             </div>
           </Describe>
@@ -100,8 +99,7 @@ export default function About() {
           <Describe imgOn img='/data_01.png'></Describe>
           <Describe>
             <div style={{ textAlign: 'left' }}>
-              不登校時は全国で24万人
-              <br />
+              <h3>不登校時は全国で24万人</h3>
               日本では近年、全国的に不登校の子どもの数が増加傾向にあります。
               その中でも特に小学生の増加率が著しく、その人数は10年前の約3倍にもなります。
               このことからも今後、学校の教室以外の学びの場の重要性は増々高まっていくと考えられます。
@@ -119,16 +117,13 @@ export default function About() {
           学びの場をつくる
         </SectionBody>
         <Grid rows='grid2'>
-          <Describe imgOn img='/card_04.JPG' radiusOn></Describe>
+          <Describe imgOn img='/card_04a.jpg' radiusOn></Describe>
           <Describe radiusOn>
             <div>
-              安全・安心の確保
+              <h3>安全・安心の確保</h3>
+              自分らしく学び、成長するためには何よりもまず心身の安全と安心が確保されている必要があると考えています。
               <br />
-              様々な事情により、学校に行きたくてもいけない子どもたちがたくさんいます。
-              <br />
-              しかし、学校の教室以外の学びの選択肢が不足している現状があります。
-              <br />
-              学校に行けないことで、学びと成長の機会が損なわれてしまうことは、子どもたちの将来に大きな影響を及ぼすことになります。
+              居心地の良い場所でスタッフや子どもたちとの触れ合い、学力に留まらない様々なスキルや感性を身に付けて欲しいという思いで運営をしています。
               <br />
             </div>
           </Describe>
@@ -139,8 +134,7 @@ export default function About() {
           <Describe imgOn img='/data_02.png'></Describe>
           <Describe>
             <div style={{ textAlign: 'left' }}>
-              子どもたちを取り巻く不安
-              <br />
+              <h3>子どもたちを取り巻く不安</h3>
               学校に行きたくなくなってしまう要因の中でもっとも割合の高いものは、
               本人たちの不安や無気力によるものです。彼らにとって必要なものは
               安心・安全の確保された居心地の良い場所なのではないでしょうか。
@@ -158,7 +152,7 @@ export default function About() {
           学べる社会に
         </SectionBody>
         <Grid rows='grid2'>
-          <Describe imgOn img='/card_05.JPG' radiusOn></Describe>
+          <Describe imgOn img='/card_05a.JPG' radiusOn></Describe>
           <Describe radiusOn>
             <div>
               子どもだけではなく、大人になってからも、自分の個性や才能に合う学びの機会が、いつもあたりまえのように存在している。

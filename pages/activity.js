@@ -73,7 +73,7 @@ export default function Activity() {
               padding: 'var(--space-xs)',
             }}
           >
-            <Card basicStyle title='学校内フリースクール' img='/card_01.JPG'>
+            <Card basicStyle title='学校内フリースクール' img='/card_01a.jpg'>
               学校には行きたいけど、教室に行くことに難しさを感じる子どもたち向けに、学校と連携し校内にフリースクールを運営しています。この場所では教科学習以外にも様々なアクティビティーに挑戦しています。
             </Card>
           </div>
@@ -83,7 +83,7 @@ export default function Activity() {
               padding: 'var(--space-xs)',
             }}
           >
-            <Card basicStyle title='学校外フリースクール' img='/card_06.JPG'>
+            <Card basicStyle title='学校外フリースクール' img='/card_02a.jpg'>
               学校に行くことに難しさを感じる子どもたち向けに、学校外の施設を利用してフリースクールを運営しています。子どもたち一人ひとりの興味関心に寄り添い、ユニークな一歩を踏み出すことができるようなプログラムを実施しています。
             </Card>
           </div>
@@ -95,13 +95,13 @@ export default function Activity() {
         </IconHedding>
         <Column>
           <Grid rows='grid3'>
-            <Card basicStyle title='安全と安心' img='/card_07.JPG'>
+            <Card basicStyle title='安全と安心' img='/card_08a.jpg'>
               子どもたちが心理的・肉体的に安全が保たれている状況で過ごせることが何よりも大切だと考えています。そのための空間づくり、スタッフの接し方、プログラムづくりを意識しています。
             </Card>
-            <Card basicStyle title='学び手主体の学習' img='/card_09.JPG'>
+            <Card basicStyle title='学び手主体の学習' img='/card_06a.jpg'>
               学びの主体をいつも子どもたちにおくようにしています。プログラムを準備したとしても、それに必ず参加しなければいけないわけではなく、あくまでも子どもたちの意思による選択を尊重しています。
             </Card>
-            <Card basicStyle title='自信になる体験' img='/card_10.JPG'>
+            <Card basicStyle title='自信になる体験' img='/card_07a.jpg'>
               子どもたちが自らの意思で緒戦したことがらに、成果と過程を通して、子どもたちが自分に自信をつけられる体験ができるように意識をしています。
             </Card>
           </Grid>
