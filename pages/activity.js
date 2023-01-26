@@ -98,7 +98,7 @@ export default function Activity() {
             <Card basicStyle title='安全と安心' img='/card_08a.jpg'>
               子どもたちが心理的・肉体的に安全が保たれている状況で過ごせることが何よりも大切だと考えています。そのための空間づくり、スタッフの接し方、プログラムづくりを意識しています。
             </Card>
-            <Card basicStyle title='学び手主体の学習' img='/card_06a.JPG'>
+            <Card basicStyle title='学び手主体の学習' img='/card_06a.jpg'>
               学びの主体をいつも子どもたちにおくようにしています。プログラムを準備したとしても、それに必ず参加しなければいけないわけではなく、あくまでも子どもたちの意思による選択を尊重しています。
             </Card>
             <Card basicStyle title='自信になる体験' img='/card_07a.jpg'>
