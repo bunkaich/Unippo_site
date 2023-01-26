@@ -117,7 +117,7 @@ export default function About() {
           学びの場をつくる
         </SectionBody>
         <Grid rows='grid2'>
-          <Describe imgOn img='/card_04a.jpg' radiusOn></Describe>
+          <Describe imgOn img='/card_04a.JPG' radiusOn></Describe>
           <Describe radiusOn>
             <div>
               <h3>安全・安心の確保</h3>
