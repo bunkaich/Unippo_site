@@ -137,7 +137,10 @@ export default function Activity() {
             <div>
               フリースクール概要
               <br />
-              ・日時：各月の日程詳細は下記リンク記載
+              ・日時：
+              <span style={{ fontSize: 'calc(var(--body)*0.7)' }}>
+                各月の日程詳細は下記リンク記載
+              </span>
               <br />
               ・内容：午前中プログラム/午後自由時間
               <br />
