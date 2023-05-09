@@ -4,8 +4,9 @@
   padding: calc(var(--body) * 0.3) calc(var(--space-xs) * 0.7);
   text-decoration: none;
   border-radius: 40px;
-  border: solid calc(var(--body) * 0.15) #5B5759;
+  border: solid calc(var(--body) * 0.15) #5b5759;
   background-color: var(--green);
+  font-size: calc(var(--body) * 1.2);
 }
 
 .altBtn {
@@ -28,7 +29,7 @@
 .rightSide {
   text-align: right;
 }
-@media (max-width: 767px){
+@media (max-width: 767px) {
   .rightSide {
     max-width: 320px;
     margin: 0 auto;
