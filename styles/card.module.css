@@ -86,6 +86,7 @@
 .description {
   font-size: calc(var(--body) * 0.8);
   margin-bottom: calc(var(--space-xs) * 0.8);
+  text-align: left;
 }
 
 .innerDesctiption {

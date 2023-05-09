@@ -108,6 +108,7 @@ export default function Home({ news, column }) {
             生み出します。
             <br />
             応援をよろしくお願いいたします。
+            <div style={{ paddingBottom: 'var(--space-xs)' }}></div>
             <Button link='/support'>詳しく見る</Button>
           </Card>
           <Card title='スタッフとして支援' img='/assets_05.png'>
@@ -116,6 +117,7 @@ export default function Home({ news, column }) {
             生み出します。
             <br />
             応援をよろしくお願いいたします。
+            <div style={{ paddingBottom: 'var(--space-xs)' }}></div>
             <Button link='about'>詳しく見る</Button>
           </Card>
         </Grid>

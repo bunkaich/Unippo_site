@@ -105,14 +105,14 @@ export default function Support() {
           子どもたちの学び場の選択肢を増やすために、皆様のお力をお貸し下さい。
         </p>
         <Grid rows='grid2'>
-          <Card title='ご支援' img='/assets_06.png' basicStyle>
+          <Card title='ご支援' img='/assets_06.png'>
             継続的な支援と単発でのご支援をお選びいただけます。
             <div style={{ paddingBottom: 'var(--space-xs)' }}></div>
             <Button link='about'>継続的なご支援</Button>
             <div style={{ paddingBottom: 'var(--space-xs)' }}></div>
             <Button link='about'>単発でのご支援</Button>
           </Card>
-          <Card title='スタッフとして支援' img='/assets_05.png' basicStyle>
+          <Card title='スタッフとして支援' img='/assets_05.png'>
             ボランティアとして居場所の運営や、その他のUnippoの活動に関わってくださるメンバーを募集しています。
             ボタンを押すとgoogleフォームへ移動します。
             <div style={{ paddingBottom: 'var(--space-xs)' }}></div>
