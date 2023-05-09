@@ -91,8 +91,8 @@ export default function Support() {
           学校関係者の方々へ
         </Button>
       </Section>
-      <Section fullWidth color='bgImg'>
-        <IconHedding color='blue' borderOff>
+      <Section fullWidth color='green'>
+        <IconHedding color='red' borderOff>
           ご支援について
         </IconHedding>
         <p
@@ -105,26 +105,13 @@ export default function Support() {
           子どもたちの学び場の選択肢を増やすために、皆様のお力をお貸し下さい。
         </p>
         <Grid rows='grid3'>
-          <Card img='/assets_06.png'>
-            皆様からのご支援が子どもたちの笑顔を
-            <br />
-            生み出します。
-            <br />
-            応援をよろしくお願いいたします。
+          <Card title='ご支援' img='/assets_06.png'>
+            継続的な支援と単発でのご支援をお選びいただけます。
           </Card>
           <Card title='スタッフとして支援' img='/assets_05.png'>
-            皆様からのご支援が子どもたちの笑顔を
+            ボランティアとして居場所の運営や、その他のUnippoの活動に関わってくださるメンバーを募集しています。
             <br />
-            生み出します。
-            <br />
-            応援をよろしくお願いいたします。
-          </Card>
-          <Card title='スタッフとして支援' img='/assets_05.png'>
-            皆様からのご支援が子どもたちの笑顔を
-            <br />
-            生み出します。
-            <br />
-            応援をよろしくお願いいたします。
+            ボタンを押すとgoogleフォームへ移動します。
           </Card>
         </Grid>
       </Section>
