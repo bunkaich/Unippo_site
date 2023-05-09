@@ -6,7 +6,7 @@
   border-radius: 40px;
   border: solid calc(var(--body) * 0.15) #5b5759;
   background-color: var(--green);
-  font-size: calc(var(--body) * 1.2);
+  font-size: calc(var(--body) * 1);
 }
 
 .altBtn {
