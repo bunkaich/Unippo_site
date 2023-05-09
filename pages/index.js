@@ -108,6 +108,7 @@ export default function Home({ news, column }) {
             生み出します。
             <br />
             応援をよろしくお願いいたします。
+            <Button link='about'>テストボタン</Button>
           </Card>
           <Card title='スタッフとして支援' img='/assets_05.png'>
             皆様からのご支援が子どもたちの笑顔を
@@ -115,6 +116,7 @@ export default function Home({ news, column }) {
             生み出します。
             <br />
             応援をよろしくお願いいたします。
+            <Button link='about'>テストボタン</Button>
           </Card>
         </Grid>
       </Section>

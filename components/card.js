@@ -55,7 +55,7 @@ export default function Card({
         ) : (
           ''
         )}
-        {basicStyle ? (
+        {/*basicStyle ? (
           ''
         ) : innerOn ? (
           <Button altColor link={link}>
@@ -63,7 +63,7 @@ export default function Card({
           </Button>
         ) : (
           <Button link={link}>{buttonText}</Button>
-        )}
+        )*/}
       </div>
     </div>
   )

@@ -108,11 +108,13 @@ export default function Support() {
           <Card title='ご支援' img='/assets_06.png'>
             継続的な支援と単発でのご支援をお選びいただけます。
             <Button link='about'>テストボタン</Button>
+            <Button link='about'>テストボタン</Button>
           </Card>
           <Card title='スタッフとして支援' img='/assets_05.png'>
             ボランティアとして居場所の運営や、その他のUnippoの活動に関わってくださるメンバーを募集しています。
             <br />
             ボタンを押すとgoogleフォームへ移動します。
+            <Button link='about'>テストボタン</Button>
           </Card>
         </Grid>
       </Section>
