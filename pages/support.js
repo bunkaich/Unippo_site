@@ -107,10 +107,18 @@ export default function Support() {
         <Grid rows='grid2'>
           <Card title='ご支援' img='/assets_06.png'>
             継続的な支援と単発でのご支援をお選びいただけます。
-            <Button large link='about'>
+            <Button
+              large
+              link='about'
+              style={{ paddingBottom: 'var(--space-xs)' }}
+            >
               テストボタン
             </Button>
-            <Button large link='about'>
+            <Button
+              large
+              link='about'
+              style={{ paddingBottom: 'var(--space-xs)' }}
+            >
               テストボタン
             </Button>
           </Card>
