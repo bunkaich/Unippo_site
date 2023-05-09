@@ -9,6 +9,8 @@ export default function Card({
   innerOn = false,
   basicStyle = false,
   greenOn = false,
+  buttonText = '詳しく見る',
+  link = '',
 }) {
   return (
     <div
@@ -56,11 +58,11 @@ export default function Card({
         {basicStyle ? (
           ''
         ) : innerOn ? (
-          <Button altColor link='/activity'>
-            詳しく見る
+          <Button altColor link={link}>
+            {buttonText}
           </Button>
         ) : (
-          <Button>詳しく見る</Button>
+          <Button link={link}>{buttonText}</Button>
         )}
       </div>
     </div>
