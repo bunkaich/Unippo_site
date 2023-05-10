@@ -1,3 +1,9 @@
+.grid3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  margin-bottom: var(--space-xs);
+}
 
 @media (min-width: 768px) {
   .grid4 {
@@ -6,14 +12,14 @@
     text-align: center;
     margin-bottom: var(--space-xs);
   }
-  
+
   .grid3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
     margin-bottom: var(--space-xs);
   }
-  
+
   .grid2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -21,13 +27,15 @@
   }
 }
 @media (max-width: 767px) {
-  .grid2, .grid3, .grid4 {
+  .grid2,
+  .grid3,
+  .grid4 {
     display: grid;
     margin: 0 auto;
     max-width: 320px;
-
   }
-  .grid3, .grid4 {
+  .grid3,
+  .grid4 {
     margin-bottom: var(--space-xs);
   }
 }
