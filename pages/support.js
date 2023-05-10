@@ -89,12 +89,6 @@ export default function Support() {
             </Card>
           </Grid>
         </Column>
-        <Button
-          link='https://docs.google.com/forms/d/e/1FAIpQLSca-azW_RcVPO2Oq4Kw2YAZWe7glQNw7_6zds_NEvn3TwwXnQ/viewform'
-          rightOn
-        >
-          学校関係者の方々へ
-        </Button>
       </Section>
       <Section fullWidth color='green' width='1200px'>
         <IconHedding color='red' borderOff>
