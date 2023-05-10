@@ -17,6 +17,7 @@
   border-radius: 0.7rem;
   color: #fff;
   font-size: 2em;
+  z-index: 1;
 }
 .topEyecatch::after {
   content: '';
