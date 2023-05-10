@@ -8,3 +8,9 @@
   background-color: var(--green);
   font-size: calc(var(--body));
 }
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+}
