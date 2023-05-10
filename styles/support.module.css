@@ -1,5 +1,6 @@
 .btn {
   display: inline-block;
+  width: 90%;
   color: #fff;
   padding: calc(var(--body) * 0.3) calc(var(--space-xs) * 0.7);
   text-decoration: none;

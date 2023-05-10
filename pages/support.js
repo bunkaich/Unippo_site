@@ -116,14 +116,31 @@ export default function Support() {
               <div>
                 <Link href='https://buy.stripe.com/fZe28T6ZL0BQ4lGcMO'>
                   <a className={supportStyles.btn} target='_blank'>
-                    <span>￥1000</span>
+                    <span>￥2000</span>
                   </a>
                 </Link>
               </div>
               <div>
                 <Link href='https://buy.stripe.com/fZe28T6ZL0BQ4lGcMO'>
                   <a className={supportStyles.btn} target='_blank'>
-                    <span>￥3000</span>
+                    <span>￥5000</span>
+                  </a>
+                </Link>
+              </div>
+            </Grid>
+            <div style={{ paddingBottom: 'var(--space-xs)' }}></div>
+            <Grid rows='grid2'>
+              <div>
+                <Link href='https://buy.stripe.com/fZe28T6ZL0BQ4lGcMO'>
+                  <a className={supportStyles.btn} target='_blank'>
+                    <span>￥10000</span>
+                  </a>
+                </Link>
+              </div>
+              <div>
+                <Link href='https://buy.stripe.com/fZe28T6ZL0BQ4lGcMO'>
+                  <a className={supportStyles.btn} target='_blank'>
+                    <span>金額を指定</span>
                   </a>
                 </Link>
               </div>
