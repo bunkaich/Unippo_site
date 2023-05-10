@@ -106,6 +106,50 @@ export default function Support() {
         >
           子どもたちの学び場の選択肢を増やすために、皆様のお力をお貸し下さい。
         </p>
+        <Grid rows='grid3'>
+          <Card title='継続的なご支援' img='/assets_06.png'>
+            下記ボタンより寄付金額をお選びください。
+            <div style={{ paddingBottom: 'var(--space-xs)' }}></div>
+            <Button link='https://buy.stripe.com/fZe28T6ZL0BQ4lGcMO'>
+              継続的なご支援
+            </Button>
+            <div style={{ paddingBottom: 'var(--space-xs)' }}></div>
+            <Button link='https://donate.stripe.com/dR600L4RD1FU4lGaEF'>
+              単発でのご支援
+            </Button>
+          </Card>
+          <Card title='今回のみのご支援' img='/assets_06.png'>
+            下記ボタンより寄付金額をお選びください。
+            <div style={{ paddingBottom: 'var(--space-xs)' }}></div>
+            <Button link='https://buy.stripe.com/fZe28T6ZL0BQ4lGcMO'>
+              継続的なご支援
+            </Button>
+            <div style={{ paddingBottom: 'var(--space-xs)' }}></div>
+            <Button link='https://donate.stripe.com/dR600L4RD1FU4lGaEF'>
+              単発でのご支援
+            </Button>
+          </Card>
+          <Card title='スタッフとして支援' img='/assets_05.png'>
+            ボランティアとして居場所の運営や、その他のUnippoの活動に関わってくださるメンバーを募集しています。
+            ボタンを押すとgoogleフォームへ移動します。
+            <div style={{ paddingBottom: 'var(--space-xs)' }}></div>
+            <Button link='about'>メンバーとして応募</Button>
+          </Card>
+        </Grid>
+      </Section>
+      <Section fullWidth color='green'>
+        <IconHedding color='red' borderOff>
+          ご支援について
+        </IconHedding>
+        <p
+          style={{
+            textAlign: 'center',
+            marginBottom: 'var(--space-xs)',
+            fontWeight: '300',
+          }}
+        >
+          子どもたちの学び場の選択肢を増やすために、皆様のお力をお貸し下さい。
+        </p>
         <Grid rows='grid2'>
           <Card title='ご支援' img='/assets_06.png'>
             継続的な支援と単発でのご支援をお選びいただけます。
