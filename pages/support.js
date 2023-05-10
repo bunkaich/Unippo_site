@@ -2,12 +2,14 @@ import Meta from 'components/meta'
 import Container from 'components/container'
 import Hero from 'components/hero'
 import PostBody from 'components/post-body'
+import Link from 'next/link'
 import Section from 'components/section'
 import SectionBody from 'components/section-body'
 import IconHedding from 'components/icon-hedding'
 import Image from 'next/image'
 import eyecatch from 'images/pagetop_02.jpeg'
 import styles from 'styles/index.module.css'
+import supportStyles from 'styles/support.module.css'
 import Button from 'components/button'
 import Grid from 'components/grid'
 import Box from 'components/box'
@@ -110,6 +112,22 @@ export default function Support() {
           <Card title='継続的なご支援' img='/assets_06.png'>
             下記ボタンより寄付金額をお選びください。
             <div style={{ paddingBottom: 'var(--space-xs)' }}></div>
+            <Grid rows='grid2'>
+              <div>
+                <Link href='https://buy.stripe.com/fZe28T6ZL0BQ4lGcMO'>
+                  <a className={supportStyles.btn} target='_blank'>
+                    <span style={{ marginLeft: '1rem' }}>￥1000</span>
+                  </a>
+                </Link>
+              </div>
+              <div>
+                <Link href='https://buy.stripe.com/fZe28T6ZL0BQ4lGcMO'>
+                  <a className={supportStyles.btn} target='_blank'>
+                    <span style={{ marginLeft: '1rem' }}>￥3000</span>
+                  </a>
+                </Link>
+              </div>
+            </Grid>
             <Button link='https://buy.stripe.com/fZe28T6ZL0BQ4lGcMO'>
               継続的なご支援
             </Button>
@@ -118,7 +136,7 @@ export default function Support() {
               単発でのご支援
             </Button>
           </Card>
-          <Card title='今回のみのご支援' img='/assets_06.png'>
+          <Card title='今回のみのご支援' img='/assets_07.png'>
             下記ボタンより寄付金額をお選びください。
             <div style={{ paddingBottom: 'var(--space-xs)' }}></div>
             <Button link='https://buy.stripe.com/fZe28T6ZL0BQ4lGcMO'>

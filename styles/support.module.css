@@ -1,0 +1,9 @@
+.btn {
+  display: inline-block;
+  color: #fff;
+  padding: calc(var(--body) * 0.3) calc(var(--space-xs) * 0.7);
+  text-decoration: none;
+  border: solid calc(var(--body) * 0.15) #5b5759;
+  background-color: var(--green);
+  font-size: calc(var(--body) * 0.7);
+}
