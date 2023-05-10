@@ -116,14 +116,14 @@ export default function Support() {
               <div>
                 <Link href='https://buy.stripe.com/fZe28T6ZL0BQ4lGcMO'>
                   <a className={supportStyles.btn} target='_blank'>
-                    <span style={{ marginLeft: '1rem' }}>￥1000</span>
+                    <span>￥1000</span>
                   </a>
                 </Link>
               </div>
               <div>
                 <Link href='https://buy.stripe.com/fZe28T6ZL0BQ4lGcMO'>
                   <a className={supportStyles.btn} target='_blank'>
-                    <span style={{ marginLeft: '1rem' }}>￥3000</span>
+                    <span>￥3000</span>
                   </a>
                 </Link>
               </div>

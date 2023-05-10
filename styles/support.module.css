@@ -5,5 +5,5 @@
   text-decoration: none;
   border: solid calc(var(--body) * 0.15) #5b5759;
   background-color: var(--green);
-  font-size: calc(var(--body) * 0.7);
+  font-size: calc(var(--body));
 }
