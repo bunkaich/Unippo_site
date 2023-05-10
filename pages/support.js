@@ -115,14 +115,14 @@ export default function Support() {
             <div style={{ paddingBottom: 'var(--space-xs)' }}></div>
             <Grid rows='grid2'>
               <div>
-                <Link href='https://buy.stripe.com/fZe28T6ZL0BQ4lGcMO'>
+                <Link href='https://donate.stripe.com/4gw6p9do91FU9G04gj'>
                   <a className={supportStyles.btn} target='_blank'>
                     <span>￥1000</span>
                   </a>
                 </Link>
               </div>
               <div>
-                <Link href='https://buy.stripe.com/fZe28T6ZL0BQ4lGcMO'>
+                <Link href='https://donate.stripe.com/fZe28T6ZL0BQ4lGcMO'>
                   <a className={supportStyles.btn} target='_blank'>
                     <span>￥3000</span>
                   </a>
@@ -132,14 +132,14 @@ export default function Support() {
             <div style={{ paddingBottom: 'calc(var(--space-xs)*0.5)' }}></div>
             <Grid rows='grid2'>
               <div>
-                <Link href='https://buy.stripe.com/fZe28T6ZL0BQ4lGcMO'>
+                <Link href='https://donate.stripe.com/00g7td5VH4S6f0kbIM'>
                   <a className={supportStyles.btn} target='_blank'>
                     <span>￥5000</span>
                   </a>
                 </Link>
               </div>
               <div>
-                <Link href='https://buy.stripe.com/fZe28T6ZL0BQ4lGcMO'>
+                <Link href='https://donate.stripe.com/bIYfZJdo91FU3hC7sx'>
                   <a className={supportStyles.btn} target='_blank'>
                     <span>￥10000~</span>
                   </a>
@@ -152,14 +152,14 @@ export default function Support() {
             <div style={{ paddingBottom: 'var(--space-xs)' }}></div>
             <Grid rows='grid2'>
               <div>
-                <Link href='https://buy.stripe.com/fZe28T6ZL0BQ4lGcMO'>
+                <Link href='https://donate.stripe.com/dR628T3Nz0BQbO8fZ4'>
                   <a className={supportStyles.btn} target='_blank'>
                     <span>￥1000</span>
                   </a>
                 </Link>
               </div>
               <div>
-                <Link href='https://buy.stripe.com/fZe28T6ZL0BQ4lGcMO'>
+                <Link href='https://donate.stripe.com/dR600L4RD1FU4lGaEF'>
                   <a className={supportStyles.btn} target='_blank'>
                     <span>￥3000</span>
                   </a>
@@ -169,14 +169,14 @@ export default function Support() {
             <div style={{ paddingBottom: 'calc(var(--space-xs)*0.5)' }}></div>
             <Grid rows='grid2'>
               <div>
-                <Link href='https://buy.stripe.com/fZe28T6ZL0BQ4lGcMO'>
+                <Link href='https://donate.stripe.com/dR67tdesdbgug4oeV1'>
                   <a className={supportStyles.btn} target='_blank'>
                     <span>￥5000</span>
                   </a>
                 </Link>
               </div>
               <div>
-                <Link href='https://buy.stripe.com/fZe28T6ZL0BQ4lGcMO'>
+                <Link href='https://donate.stripe.com/dR6aFpabXdoCcScaEM'>
                   <a className={supportStyles.btn} target='_blank'>
                     <span>￥10000~</span>
                   </a>

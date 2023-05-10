@@ -38,6 +38,7 @@ export default function Activity() {
             objectPosition='50% 10%'
           />
         </figure>
+        <div className={styles.centeredText}>活動内容</div>
       </div>
       <Section>
         <SectionBody>

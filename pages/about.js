@@ -37,6 +37,7 @@ export default function About() {
             objectPosition='50% 20%'
           />
         </figure>
+        <div className={styles.centeredText}>私たちについて</div>
       </div>
       <Section>
         <SectionBody>
