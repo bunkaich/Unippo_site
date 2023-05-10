@@ -89,42 +89,8 @@ export default function Home({ news, column }) {
           記事一覧
         </Button>
       </Section>
-      <Section fullWidth color='bgImg'>
-        <IconHedding color='blue' borderOff>
-          サポーターになる
-        </IconHedding>
-        <p
-          style={{
-            textAlign: 'center',
-            marginBottom: 'var(--space-xs)',
-            fontWeight: '300',
-          }}
-        >
-          子どもたちの学び場の選択肢を増やすために、皆様のお力をお貸し下さい。
-        </p>
-        <Grid rows='grid2'>
-          <Card img='/assets_06.png'>
-            皆様からのご支援が子どもたちの笑顔を
-            <br />
-            生み出します。
-            <br />
-            応援をよろしくお願いいたします。
-            <div style={{ paddingBottom: 'var(--space-xs)' }}></div>
-            <Button link='/support'>詳しく見る</Button>
-          </Card>
-          <Card title='スタッフとして支援' img='/assets_05.png'>
-            皆様からのご支援が子どもたちの笑顔を
-            <br />
-            生み出します。
-            <br />
-            応援をよろしくお願いいたします。
-            <div style={{ paddingBottom: 'var(--space-xs)' }}></div>
-            <Button link='about'>詳しく見る</Button>
-          </Card>
-        </Grid>
-      </Section>
       <Section fullWidth color='bgImg' width='1200px'>
-        <IconHedding color='red' borderOff>
+        <IconHedding color='blue' borderOff>
           サポーターになる
         </IconHedding>
         <p
