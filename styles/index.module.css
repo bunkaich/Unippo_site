@@ -16,7 +16,7 @@
   border: 3px solid #fff;
   border-radius: 0.7rem;
   color: #fff;
-  font-size: 2em;
+  font-size: calc(var(--body) * 1.5);
   z-index: 1;
 }
 .topEyecatch::after {
