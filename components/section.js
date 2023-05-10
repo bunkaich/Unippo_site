@@ -11,9 +11,10 @@ export default function Section({
       className={
         fullWidth ? `${styles.fullwidth} ${styles[color]}` : styles.basic
       }
-      style={{ maxWidth: width }}
     >
-      <div className={styles.inner}>{children}</div>
+      <div className={styles.inner} style={{ maxWidth: width }}>
+        {children}
+      </div>
     </section>
   )
 }
