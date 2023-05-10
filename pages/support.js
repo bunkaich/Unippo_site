@@ -140,7 +140,7 @@ export default function Support() {
               <div>
                 <Link href='https://buy.stripe.com/fZe28T6ZL0BQ4lGcMO'>
                   <a className={supportStyles.btn} target='_blank'>
-                    <span>10000~</span>
+                    <span>￥10000~</span>
                   </a>
                 </Link>
               </div>
@@ -177,7 +177,7 @@ export default function Support() {
               <div>
                 <Link href='https://buy.stripe.com/fZe28T6ZL0BQ4lGcMO'>
                   <a className={supportStyles.btn} target='_blank'>
-                    <span>10000~</span>
+                    <span>￥10000~</span>
                   </a>
                 </Link>
               </div>
@@ -189,6 +189,37 @@ export default function Support() {
             <div style={{ paddingBottom: 'var(--space-xs)' }}></div>
             <Button link='about'>メンバーとして応募</Button>
           </Card>
+        </Grid>
+      </Section>
+      <Section>
+        <IconHedding color='yellow' borderOff>
+          支援への感謝とお礼
+        </IconHedding>
+        <Grid rows='grid2' gap='var(--space-sm)'>
+          <div
+            style={{
+              backgroundColor: 'var(--accent-yellow)',
+              padding: 'var(--space-xs)',
+            }}
+          >
+            <Card basicStyle title='ニュースレターのお届け' img='/card_01a.jpg'>
+              サポーターの皆さまには感謝と御礼の気持ちを込めて、定期的にニュースレターをお届けしています。ニュースレターには、活動の最新情報や成果報告、子どもたちの声や保護者の感想などが掲載されており、皆さまが支援してくださった活動の結果を確認していただくことができます。
+            </Card>
+          </div>
+          <div
+            style={{
+              backgroundColor: 'var(--gray-10)',
+              padding: 'var(--space-xs)',
+            }}
+          >
+            <Card
+              basicStyle
+              title='講演会や報告会へのご招待'
+              img='/card_02a.jpg'
+            >
+              Unippoでの活動を直接お伝えする機会を設けるために、不定期で開催される講演会や報告会にサポーターの皆さまをご招待させていただきます。これらのイベントでは、活動の詳細や最新の取り組み、子どもたちの様子や成長、団体の今後の展望についてご紹介させていただきます。
+            </Card>
+          </div>
         </Grid>
       </Section>
       <div style={{ paddingBottom: 'var(--space-xl)' }}></div>
