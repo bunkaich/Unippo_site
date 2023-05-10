@@ -36,10 +36,13 @@ export default function Footer() {
         </div>
         <div className={styles.spaceBetween}>
           <div className={styles.flexItem}>
-            <p className={styles.bottomDashed}>
-              <FontAwesomeIcon icon={faGreaterThan} />
-              <span style={{ marginLeft: '1rem' }}>私たちについて</span>
-            </p>
+            <Link href='/about'>
+              <a target='_blank'></a>
+              <p className={styles.bottomDashed}>
+                <FontAwesomeIcon icon={faGreaterThan} />
+                <span style={{ marginLeft: '1rem' }}>私たちについて</span>
+              </p>
+            </Link>
             <ul style={{ display: 'none' }}>
               <li>団体概要</li>
               <li>団体概要</li>
