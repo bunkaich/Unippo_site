@@ -41,10 +41,12 @@ export default function Support() {
       </div>
       <Section>
         <SectionBody>
-          <h2 style={{ textAlign: 'center' }}>
+          <h2
+            style={{ textAlign: 'center', fontSize: 'calc(var(--heading3))' }}
+          >
             子どもたちの居場所の創出のため、
             <br className={styles.brMb} />
-            支援をお願いします
+            ご支援をお願いします
           </h2>
           <div style={{ marginTop: 'calc(var(--space-xs))' }}>
             <Grid rows='grid2'>
@@ -54,7 +56,7 @@ export default function Support() {
               </div>
               <figure className=''>
                 <Image
-                  src='/assets_03.png'
+                  src='/assets_06.png'
                   alt=''
                   layout='responsive'
                   sizes='100vw'
@@ -73,13 +75,13 @@ export default function Support() {
         </IconHedding>
         <Column>
           <Grid rows='grid3'>
-            <Card basicStyle title='居場所の運営費用' img='/card_08a.jpg'>
+            <Card basicStyle title='居場所の運営費用' img='/card_11.jpeg'>
               学校内外のフリースクールの運営費用に使わせていただきます。教室の維持・管理や、教育プログラムの開発に必要な資金を確保することで、子どもたちにより安全で快適な学びの場を提供します。
             </Card>
             <Card basicStyle title='学びコンテンツの導入' img='/card_06a.jpg'>
               子どもたちが学ぶための教材や道具を購入・更新に使用させていただきます。様々な学びのツールを導入することで、子どもたちの個性と才能に合わせた学びの環境を整えることができます。
             </Card>
-            <Card basicStyle title='スタッフの研修・育成' img='/card_07a.jpg'>
+            <Card basicStyle title='スタッフの研修・育成' img='/card_05a.jpg'>
               Unippoのスタッフは、子どもたちに質の高いサポートを提供するために継続的な研修を受けています。寄付金により、彼らのスキルアップや専門知識の習得をサポートし、子どもたちへの更なる貢献を目指します。
             </Card>
           </Grid>
