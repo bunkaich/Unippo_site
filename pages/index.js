@@ -106,7 +106,7 @@ export default function Home({ news, column }) {
           <Card title='継続的なご支援' img='/assets_06.png'>
             下記ボタンより寄付金額をお選びください。
             <div style={{ paddingBottom: 'var(--space-xs)' }}></div>
-            <Grid rows='grid2'>
+            <div className={supportStyles.grid2}>
               <div>
                 <Link href='https://buy.stripe.com/aEU28TabX1FUg4o6ox'>
                   <a className={supportStyles.btn} target='_blank'>
@@ -121,9 +121,9 @@ export default function Home({ news, column }) {
                   </a>
                 </Link>
               </div>
-            </Grid>
+            </div>
             <div style={{ paddingBottom: 'calc(var(--space-xs)*0.5)' }}></div>
-            <Grid rows='grid2'>
+            <div className={supportStyles.grid2}>
               <div>
                 <Link href='https://buy.stripe.com/dR6eVFck52JYg4ofZ9'>
                   <a className={supportStyles.btn} target='_blank'>
@@ -138,12 +138,12 @@ export default function Home({ news, column }) {
                   </a>
                 </Link>
               </div>
-            </Grid>
+            </div>
           </Card>
           <Card title='今回のみのご支援' img='/assets_07.png'>
             下記ボタンより寄付金額をお選びください。
             <div style={{ paddingBottom: 'var(--space-xs)' }}></div>
-            <Grid rows='grid2'>
+            <div className={supportStyles.grid2}>
               <div>
                 <Link href='https://donate.stripe.com/dR628T3Nz0BQbO8fZ4'>
                   <a className={supportStyles.btn} target='_blank'>
@@ -158,9 +158,9 @@ export default function Home({ news, column }) {
                   </a>
                 </Link>
               </div>
-            </Grid>
+            </div>
             <div style={{ paddingBottom: 'calc(var(--space-xs)*0.5)' }}></div>
-            <Grid rows='grid2'>
+            <div className={supportStyles.grid2}>
               <div>
                 <Link href='https://donate.stripe.com/dR67tdesdbgug4oeV1'>
                   <a className={supportStyles.btn} target='_blank'>
@@ -175,7 +175,7 @@ export default function Home({ news, column }) {
                   </a>
                 </Link>
               </div>
-            </Grid>
+            </div>
           </Card>
           <Card title='スタッフとして支援' img='/assets_05.png'>
             ボランティアとして居場所の運営や、その他のUnippoの活動に関わってくださるメンバーを募集しています。
