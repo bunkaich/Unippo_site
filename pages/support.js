@@ -128,7 +128,7 @@ export default function Support() {
                 </Link>
               </div>
             </Grid>
-            <div style={{ paddingBottom: 'var(--space-xs)' }}></div>
+            <div style={{ paddingBottom: 'calc(var(--space-xs)*0.5)' }}></div>
             <Grid rows='grid2'>
               <div>
                 <Link href='https://buy.stripe.com/fZe28T6ZL0BQ4lGcMO'>
