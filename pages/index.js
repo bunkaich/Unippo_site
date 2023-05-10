@@ -122,6 +122,102 @@ export default function Home({ news, column }) {
           </Card>
         </Grid>
       </Section>
+      <Section fullWidth color='bgImg' width='1200px'>
+        <IconHedding color='red' borderOff>
+          サポーターになる
+        </IconHedding>
+        <p
+          style={{
+            textAlign: 'center',
+            marginBottom: 'var(--space-xs)',
+            fontWeight: '300',
+          }}
+        >
+          子どもたちの学び場の選択肢を増やすために、皆様のお力をお貸し下さい。
+        </p>
+        <Grid rows='grid3'>
+          <Card title='継続的なご支援' img='/assets_06.png'>
+            下記ボタンより寄付金額をお選びください。
+            <div style={{ paddingBottom: 'var(--space-xs)' }}></div>
+            <Grid rows='grid2'>
+              <div>
+                <Link href='https://buy.stripe.com/aEU28TabX1FUg4o6ox'>
+                  <a className={supportStyles.btn} target='_blank'>
+                    <span>￥1000</span>
+                  </a>
+                </Link>
+              </div>
+              <div>
+                <Link href='https://buy.stripe.com/4gwcNxdo9acq2dyfZ8'>
+                  <a className={supportStyles.btn} target='_blank'>
+                    <span>￥3000</span>
+                  </a>
+                </Link>
+              </div>
+            </Grid>
+            <div style={{ paddingBottom: 'calc(var(--space-xs)*0.5)' }}></div>
+            <Grid rows='grid2'>
+              <div>
+                <Link href='https://buy.stripe.com/dR6eVFck52JYg4ofZ9'>
+                  <a className={supportStyles.btn} target='_blank'>
+                    <span>￥5000</span>
+                  </a>
+                </Link>
+              </div>
+              <div>
+                <Link href='https://buy.stripe.com/fZe9Bl83P2JY3hC9AM'>
+                  <a className={supportStyles.btn} target='_blank'>
+                    <span>￥10000~</span>
+                  </a>
+                </Link>
+              </div>
+            </Grid>
+          </Card>
+          <Card title='今回のみのご支援' img='/assets_07.png'>
+            下記ボタンより寄付金額をお選びください。
+            <div style={{ paddingBottom: 'var(--space-xs)' }}></div>
+            <Grid rows='grid2'>
+              <div>
+                <Link href='https://donate.stripe.com/dR628T3Nz0BQbO8fZ4'>
+                  <a className={supportStyles.btn} target='_blank'>
+                    <span>￥1000</span>
+                  </a>
+                </Link>
+              </div>
+              <div>
+                <Link href='https://donate.stripe.com/dR600L4RD1FU4lGaEF'>
+                  <a className={supportStyles.btn} target='_blank'>
+                    <span>￥3000</span>
+                  </a>
+                </Link>
+              </div>
+            </Grid>
+            <div style={{ paddingBottom: 'calc(var(--space-xs)*0.5)' }}></div>
+            <Grid rows='grid2'>
+              <div>
+                <Link href='https://donate.stripe.com/dR67tdesdbgug4oeV1'>
+                  <a className={supportStyles.btn} target='_blank'>
+                    <span>￥5000</span>
+                  </a>
+                </Link>
+              </div>
+              <div>
+                <Link href='https://donate.stripe.com/dR6aFpabXdoCcScaEM'>
+                  <a className={supportStyles.btn} target='_blank'>
+                    <span>￥10000~</span>
+                  </a>
+                </Link>
+              </div>
+            </Grid>
+          </Card>
+          <Card title='スタッフとして支援' img='/assets_05.png'>
+            ボランティアとして居場所の運営や、その他のUnippoの活動に関わってくださるメンバーを募集しています。
+            ボタンを押すとgoogleフォームへ移動します。
+            <div style={{ paddingBottom: 'var(--space-xs)' }}></div>
+            <Button link='about'>メンバーとして応募</Button>
+          </Card>
+        </Grid>
+      </Section>
       {/*
       <Section>
         <IconHedding color='yellow'>私たちも応援しています</IconHedding>
