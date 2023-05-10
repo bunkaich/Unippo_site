@@ -48,7 +48,7 @@ export default function Nav() {
         </li>
         <li>
           <Link href='/support'>
-            <a onClick={closeNav}>支援について</a>
+            <a onClick={closeNav}>ご支援について</a>
           </Link>
         </li>
         <li>
