@@ -40,6 +40,7 @@ export default function Support() {
             objectPosition='50% 10%'
           />
         </figure>
+        <div className={styles.centeredText}>ご支援について</div>
       </div>
       <Section>
         <SectionBody>

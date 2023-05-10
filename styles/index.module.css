@@ -7,6 +7,16 @@
   position: relative;
   height: calc(var(--space-jump) * 12);
 }
+.centeredText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  border: 2px solid white;
+  color: white;
+  font-size: 2em;
+}
 .topEyecatch::after {
   content: '';
   position: absolute;
@@ -14,7 +24,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .h2Responsive {
   text-align: center;
