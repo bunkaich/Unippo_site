@@ -69,7 +69,7 @@ export default function Support() {
           </div>
         </SectionBody>
       </Section>
-      <Section fullWidth width='1200px'>
+      <Section fullWidth>
         <IconHedding color='blue' borderOff>
           寄付金の使いみち
         </IconHedding>
@@ -93,7 +93,7 @@ export default function Support() {
           学校関係者の方々へ
         </Button>
       </Section>
-      <Section fullWidth color='green'>
+      <Section fullWidth color='green' width='1200px'>
         <IconHedding color='red' borderOff>
           ご支援について
         </IconHedding>
