@@ -69,7 +69,7 @@ export default function Support() {
           </div>
         </SectionBody>
       </Section>
-      <Section fullWidth>
+      <Section fullWidth width='1200px'>
         <IconHedding color='blue' borderOff>
           寄付金の使いみち
         </IconHedding>
