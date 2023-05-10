@@ -145,24 +145,43 @@ export default function Support() {
                 </Link>
               </div>
             </Grid>
-            <Button link='https://buy.stripe.com/fZe28T6ZL0BQ4lGcMO'>
-              継続的なご支援
-            </Button>
-            <div style={{ paddingBottom: 'var(--space-xs)' }}></div>
-            <Button link='https://donate.stripe.com/dR600L4RD1FU4lGaEF'>
-              単発でのご支援
-            </Button>
           </Card>
           <Card title='今回のみのご支援' img='/assets_07.png'>
             下記ボタンより寄付金額をお選びください。
             <div style={{ paddingBottom: 'var(--space-xs)' }}></div>
-            <Button link='https://buy.stripe.com/fZe28T6ZL0BQ4lGcMO'>
-              継続的なご支援
-            </Button>
-            <div style={{ paddingBottom: 'var(--space-xs)' }}></div>
-            <Button link='https://donate.stripe.com/dR600L4RD1FU4lGaEF'>
-              単発でのご支援
-            </Button>
+            <Grid rows='grid2'>
+              <div>
+                <Link href='https://buy.stripe.com/fZe28T6ZL0BQ4lGcMO'>
+                  <a className={supportStyles.btn} target='_blank'>
+                    <span>￥2000</span>
+                  </a>
+                </Link>
+              </div>
+              <div>
+                <Link href='https://buy.stripe.com/fZe28T6ZL0BQ4lGcMO'>
+                  <a className={supportStyles.btn} target='_blank'>
+                    <span>￥5000</span>
+                  </a>
+                </Link>
+              </div>
+            </Grid>
+            <div style={{ paddingBottom: 'calc(var(--space-xs)*0.5)' }}></div>
+            <Grid rows='grid2'>
+              <div>
+                <Link href='https://buy.stripe.com/fZe28T6ZL0BQ4lGcMO'>
+                  <a className={supportStyles.btn} target='_blank'>
+                    <span>￥10000</span>
+                  </a>
+                </Link>
+              </div>
+              <div>
+                <Link href='https://buy.stripe.com/fZe28T6ZL0BQ4lGcMO'>
+                  <a className={supportStyles.btn} target='_blank'>
+                    <span>その他</span>
+                  </a>
+                </Link>
+              </div>
+            </Grid>
           </Card>
           <Card title='スタッフとして支援' img='/assets_05.png'>
             ボランティアとして居場所の運営や、その他のUnippoの活動に関わってくださるメンバーを募集しています。
