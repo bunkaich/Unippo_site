@@ -140,7 +140,7 @@ export default function Support() {
               <div>
                 <Link href='https://buy.stripe.com/fZe28T6ZL0BQ4lGcMO'>
                   <a className={supportStyles.btn} target='_blank'>
-                    <span>金額を指定</span>
+                    <span>その他</span>
                   </a>
                 </Link>
               </div>
