@@ -142,7 +142,7 @@ export default function Activity() {
               <br />
               ・内容：午前中プログラム/午後自由時間
               <br />
-              ・料金：2,500円/日
+              ・料金：3,500円/日
               <br />
               ・持ち物：昼食
               <br />
